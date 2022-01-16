@@ -1,12 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 
+// import AppBar from './components/AppBar';
 import Container from './components/Container';
-import AppBar from './components/AppBar';
-import HomeView from './views/HomeView';
-import RegisterView from './views/RegisterView';
-import LoginView from './views/LoginView';
-import TodoListView from './views/TodoListView';
-import NotFoundView from './views/NotFoundView';
+import TodosPage from './pages/TodosPage';
+import AboutPage from './pages/AboutPage';
+// import NotFoundPage from './pages/TodosPage';
 
 import './App.css';
 
@@ -14,23 +12,17 @@ const App = () => {
   return (
     <>
       <Container>
-        <AppBar />
+        {/* <AppBar /> */}
         <Routes>
           <Route path="/" exact>
-            <HomeView />
+            <TodosPage />
           </Route>
-          <Route path="/register">
-            <RegisterView />
+          <Route exact path="/about">
+            <AboutPage />
           </Route>
-          <Route path="/login">
-            <LoginView />
-          </Route>
-          <Route path="/todos">
-            <TodoListView />
-          </Route>
-          <Route>
-            <NotFoundView />
-          </Route>
+          {/* <Route>
+            <NotFoundPage />
+          </Route> */}
         </Routes>
       </Container>
     </>
