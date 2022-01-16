@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Container from './components/Container';
 import AppBar from './components/AppBar';
@@ -15,7 +15,7 @@ const App = () => {
     <>
       <Container>
         <AppBar />
-        <Switch>
+        <Routes>
           <Route path="/" exact>
             <HomeView />
           </Route>
@@ -31,7 +31,7 @@ const App = () => {
           <Route>
             <NotFoundView />
           </Route>
-        </Switch>
+        </Routes>
       </Container>
     </>
   );
