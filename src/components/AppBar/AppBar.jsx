@@ -7,7 +7,12 @@ const AppBar = () => {
       <nav>
         <div>
           <Link>
-            <img />
+            <img
+              src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+              alt="logo"
+              width="60"
+              height="60"
+            />
           </Link>
           <ul>
             <li>
@@ -17,7 +22,6 @@ const AppBar = () => {
               <Link path="/about">About List</Link>
             </li>
           </ul>
-          >
         </div>
       </nav>
     </>
